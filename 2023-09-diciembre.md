@@ -4,6 +4,7 @@ Las luces son de dos colores: 🔴 y 🟢 . Para que el efecto sea el adecuado, 
 
 Nos han pedido que escribamos una función adjustLights que, dado un array de strings con el color de cada luz (representados con los emojis 🔴 para el rojo y 🟢 para el verde), devuelva el número mínimo de luces que hay que cambiar para que estén los colores alternos.
 
+<code>
 adjustLights(['🟢', '🔴', '🟢', '🟢', '🟢'])
 // -> 1 (cambias la cuarta luz a 🔴)
 
@@ -18,3 +19,4 @@ adjustLights(['🟢', '🔴', '🟢', '🔴', '🟢'])
 
 adjustLights(['🔴', '🔴', '🔴'])
 // -> 1 (cambias la segunda luz a 🟢)
+</code>
