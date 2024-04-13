@@ -2,11 +2,13 @@ Ayer viernes alguien hizo despliegue a producción y se rompió la aplicación d
 
 El problema es que el formato de los árboles ha cambiado. Es un array de números… ¡pero debería ser un objeto! Por ejemplo el árbol: [3, 1, 0, 8, 12, null, 1] se ve así:
 
+<code>
 //        3
 //      /   \
 //     1     0
 //    / \     \
 //   8  12     1
+</code>
 
 Lo que necesitamos es transformar el array en un objeto donde cada nodo del árbol tiene las propiedades value, left y right.
 
