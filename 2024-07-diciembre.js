@@ -2,21 +2,21 @@
  *  @returns {string} Fixed and sorted packages
  */
 function fixPackages(packages) {
+  console.log("Packages:", packages)
   // Code here
   let regExp = /\(([^)]+)\)/;
   let matches = regExp.exec(packages);
-  function reverse(str) {
-    if (matches) {
-      fixPackages(matches[1])
-    } else {
-      return packages.split('').reverse().join('')
-    }
+  console.log(matches[0])
+  if (matches && !packages.startsWith('(')) {
+    console.log({Matches:matches[0]})
+    fixPackages(matches[0])
+  } else {
+    return packages.slice(1,-1).split('').reverse().join('')
   }
-  if 
   return packages 
 }
 
-fixPackages('a(cb)de')
+console.log(fixPackages('a(cb)de'))
 // ➞ "abcde"
 // Volteamos "cb" dentro de los paréntesis
 
